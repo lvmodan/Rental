@@ -3,6 +3,7 @@ var cheerio = require('cheerio');
 var cfg = require('../../config/config')
 
 /*url存储对象*/
+<detail>
 let rentalObj = (function(){
 	/*保存58同城上爬取的每个租房的URL*/
 	let rentalSet =  new Set();
@@ -26,7 +27,7 @@ let rentalObj = (function(){
 		}
 	}
 })();
-
+</detail>
 /*url读取解析对象*/
 let rentalInfosObj = (function(){
 	/*二手房解析出来的数据存储在该map中*/
