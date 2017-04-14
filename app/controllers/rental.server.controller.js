@@ -40,8 +40,10 @@ let rentalInfosObj = (function(){
 
 		/*反爬虫策略：1-10s随机访问，每8次休息一次，休息时间为3-9分钟随机*/
 		if (iNum > 8) {
-			setTimeout(func,10000 * (1+Math.random()));
-			if (iNum === 40) {
+			//setTimeout(func,10000 * (1+Math.random()));
+			setTimeout(func,1000 * (1+Math.random()));
+			//if (iNum === 40) {
+			if (iNum === 20) {
 				iNum = 0;
 			};
 		}
@@ -49,7 +51,8 @@ let rentalInfosObj = (function(){
 			if (szUrlPipe.length) {
 				analysis(szUrlPipe.shift());
 			};
-			setTimeout(func,10000 * Math.random());
+			//setTimeout(func,10000 * Math.random());
+			setTimeout(func,1000 * Math.random());
 		}
 	})();
 	
