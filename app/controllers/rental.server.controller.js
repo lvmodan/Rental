@@ -12,7 +12,7 @@ let rentalObj = (function(){
 
 	return {
 		add(data){
-			if (data.indexOf('hz.58.com') < 0) return;/*暂时屏蔽会跳转的URL*/
+			if (data.indexOf('bj.58.com') < 0) return;/*暂时屏蔽会跳转的URL*/
 			rentalSet.add(data);
 			callBackFunc && callBackFunc(data);
 		},
@@ -106,7 +106,7 @@ let rentalInfosObj = (function(){
 *函数返回值 ：url
 ***********************************************************************************************/
 function getUrl(page = 1){
-	return  'http://hz.58.com/chuzu/pn'+page+'/?key=%E6%9D%AD%E5%B7%9E%E7%A7%9F%E6%88%BF%E5%AD%90&cmcskey=%E7%A7%9F%E6%88%BF%E5%AD%90&final=1&PGTID=0d3090a7-0004-f43c-ee04-95c2ea3d031f&ClickID=6';
+	return  'http://bj.58.com/chuzu/pn'+page+'/?key=%E6%9D%AD%E5%B7%9E%E7%A7%9F%E6%88%BF%E5%AD%90&cmcskey=%E7%A7%9F%E6%88%BF%E5%AD%90&final=1&PGTID=0d3090a7-0004-f43c-ee04-95c2ea3d031f&ClickID=6';
 }
 
 /***********************************************************************************************
