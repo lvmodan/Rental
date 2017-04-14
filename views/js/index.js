@@ -82,7 +82,7 @@
 	}
 
 	var map = new BMap.Map("container");          // 创建地图实例  
-	map.centerAndZoom("杭州", 12);
+	map.centerAndZoom("北京", 12);
 	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
 	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
 
